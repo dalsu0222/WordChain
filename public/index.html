@@ -1,0 +1,113 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.0.0/dist/progressbar.min.js"></script>
+    <script src="./library/hantools-keyboard.js"></script>
+    <script src="./library/hangul-tools.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="headerCon">
+        <h1 class="title-color">10팀 끝말잇기</h1>
+        <i class="fas fa-bars hamBtn"></i>
+      </div>
+      <div class="hamCon">
+        <div>
+          <h3 class="cardSubtitle">최고점수</h3>
+          <p class="endScore highest">dd</p>
+        </div>
+        <div class="devCon">
+          <h3>개발자</h3>
+          <p>데브코스 FE 1기</p>
+          <p>10팀 신아진</p>
+        </div>
+      </div>
+      <div class="fill">
+        <div class="card">
+          <div class="start">
+            <h2 class="cardTitle title-color">끝말잇기 게임</h2>
+            <h3 class="cardSubtitle">제한시간 10초내에 단어를 입력해주세요</h3>
+            <button id="startBtn" class="Btn">
+              게임시작　<i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="middle">
+            <div class="topCon main-color">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+
+              <!-- <i class="fa-solid fa-heart-crack"></i> -->
+
+              <p class="score"><!-- 현재 점수 : 0--></p>
+            </div>
+            <div id="progressBar">
+              <p id="timer">10</p>
+            </div>
+
+            <h2 class="cardTitle title-color">끝말잇기 게임</h2>
+            <h3 class="cardSubtitle"></h3>
+            <div class="relative-container">
+              <p class="sign"></p>
+              <input type="text" id="search" placeholder="단어를 입력하세요" />
+            </div>
+            <button id="searchBtn" class="Btn">끝말잇기 ⌨️</button>
+            <p class="bottomText"></p>
+            <!-- 게임종료 나가기 버튼 -->
+            <button id="innerReplayBtn" class="innerReplayBtn">
+              다시하기<i class="fas fa-redo"></i>
+              <!-- 다시하기 -->
+            </button>
+            <button id="endGameBtn">
+              게임종료<i class="fas fa-door-open"></i>
+            </button>
+          </div>
+          <div class="end">
+            <h2 class="cardTitle title-color">게임종료</h2>
+            <div class="hscore-container">
+              <h3 class="cardSubtitle">최고점수</h3>
+              <div class="newImg"><img src="../img/newbadge2.png" /></div>
+            </div>
+            <p class="endScore highest"></p>
+            <h3 class="cardSubtitle">획득점수</h3>
+            <p class="endScore current">40</p>
+            <button id="replayBtn" class="Btn">
+              다시하기　<i class="fas fa-redo"></i>
+            </button>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-circle-question"></i>
+            <div class="explanation">
+              <span><게임 방법></span>
+              <p>
+                <br />
+                1. 제한시간 10초
+                <br />
+                2. 단어는 두글자 이상
+                <br />
+                3.only 사전에 등록된 단어
+                <br />
+                4. 단어 중복사용 불가
+                <br />
+                5. 명사만 인정
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
