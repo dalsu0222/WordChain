@@ -1,7 +1,10 @@
 ## 레트로한 끝말잇기 게임
 html, css, javascript만을 이용해 구현한 간단한 끝말잇기 게임입니다.   
-Node.js로 프록시 서버를 실행한 후, PC및 모바일 브라우저에서 게임을 즐길 수 있도록 구성되어 있습니다.   
-   
+Node.js로 프록시 서버를 실행한 후, PC및 모바일 브라우저에서 게임을 즐길 수 있도록 구성되어 있습니다.
+
+## 배포 주소
+https://word-chain-devcourse.vercel.app/ 에서 직접 게임을 즐길 수 있습니다.
+
 <img src="https://github.com/user-attachments/assets/a9ec71d8-13f5-48a4-b5be-53455989922c" width="30%" style="display:inline-block;">
 <img src="https://github.com/user-attachments/assets/7adbf853-fd76-41e9-a3f9-5d80632c7444" width="30%" style="display:inline-block;">
 <img src="https://github.com/user-attachments/assets/587670cd-d6cc-47fd-b998-77d813a4b3de" width="30%" style="display:inline-block;">
