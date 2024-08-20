@@ -233,7 +233,10 @@ const isBeforeWord = (currentWord) => {
 };
 const isApiWord = async (currentWord) => {
   const query = currentWord;
-  const url = new URL("http://localhost:3000/api/dictionary");
+  const baseURL = window.location.origin.includes("localhost")
+    ? "http://localhost:3000"
+    : "https://word-chain-devcourse.vercel.app";
+  const url = new URL(`${baseURL}/api/dictionary`);
 
   // 검색어를 쿼리 파라미터로 추가
   const params = new URLSearchParams();
