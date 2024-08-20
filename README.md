@@ -16,7 +16,7 @@ Node.js로 프록시 서버를 실행한 후, PC및 모바일 브라우저에서
 ## 설치 및 실행 방법
 1. 원하는 파일의 위치를 열고, 이 저장소를 클론합니다.
 ```
-  git clone https://github.com/Wonchang0314/wordRelayGame.git
+  git clone https://github.com/dalsu0222/WordChain.git
   cd wordChain
 ```
 
