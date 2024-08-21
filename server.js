@@ -41,10 +41,11 @@ const initializeServer = async () => {
 
 // 프리워밍을 위한 테스트 요청 보내기
 const warmUpServer = async () => {
+  const baseURL = window.location.origin.includes("localhost")
+    ? "http://localhost:3000"
+    : "https://word-chain-devcourse.vercel.app";
   try {
-    const warmUpResponse = await axios.get(
-      `http://localhost:${PORT}/api/dictionary?q=나무`
-    );
+    const warmUpResponse = await axios.get(`${baseURL}/api/dictionary?q=나무`);
     if (warmUpResponse.status === 200) {
       console.log("서버 프리워밍 완료");
     } else {
